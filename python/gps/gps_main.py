@@ -1,7 +1,7 @@
 """ This file defines the main object that runs experiments. """
 
 import matplotlib as mpl
-mpl.use('Qt4Agg')
+# mpl.use('Qt4Agg')
 
 import logging
 import imp
@@ -16,12 +16,13 @@ import traceback
 
 # Add gps/python to path so that imports work.
 sys.path.append('/'.join(str.split(__file__, '/')[:-2]))
-from gps.gui.gps_training_gui import GPSTrainingGUI
-from gps.utility.data_logger import DataLogger
+# from gps.gui.gps_training_gui import GPSTrainingGUI
+# from gps.utility.data_logger import DataLogger
 from gps.sample.sample_list import SampleList
 
 
 class GPSMain(object):
+
     """ Main class to run algorithms and experiments. """
     def __init__(self, config, quit_on_end=False):
         """
@@ -33,6 +34,7 @@ class GPSMain(object):
         self._quit_on_end = quit_on_end
         self._hyperparams = config
         self._conditions = config['common']['conditions']
+
         if 'train_conditions' in config['common']:
             self._train_idx = config['common']['train_conditions']
             self._test_idx = config['common']['test_conditions']
@@ -277,6 +279,7 @@ class GPSMain(object):
             if self._quit_on_end:
                 # Quit automatically (for running sequential expts)
                 os._exit(1)
+
 
 def main():
     """ Main function to be run. """

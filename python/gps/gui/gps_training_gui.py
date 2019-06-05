@@ -20,7 +20,9 @@ import threading
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
+import sys
 
+sys.path.append('/'.join(str.split(__file__, '/')[:-2]))
 from gps.gui.config import config
 from gps.gui.action_panel import Action, ActionPanel
 from gps.gui.textbox import Textbox
