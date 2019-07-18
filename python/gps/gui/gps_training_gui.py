@@ -61,7 +61,6 @@ class GPSTrainingGUI(object):
             'run': 'cyan',
             'wait': 'orange',
             'end': 'red',
-
             'stop': 'red',
             'reset': 'yellow',
             'go': 'green',

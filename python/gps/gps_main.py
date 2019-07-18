@@ -96,13 +96,16 @@ class GPSMain(object):
         """
         algorithm_file = self._data_files_dir + 'algorithm_itr_%02d.pkl' % itr
         self.algorithm = self.data_logger.unpickle(algorithm_file)
+
         if self.algorithm is None:
             print("Error: cannot find '%s.'" % algorithm_file)
-            os._exit(1) # called instead of sys.exit(), since t
+            os._exit(1)
+            # called instead of sys.exit(), since t
         traj_sample_lists = self.data_logger.unpickle(self._data_files_dir +
             ('traj_sample_itr_%02d.pkl' % itr))
 
         pol_sample_lists = self._take_policy_samples(N)
+
         self.data_logger.pickle(
             self._data_files_dir + ('pol_sample_itr_%02d.pkl' % itr),
             copy.copy(pol_sample_lists)

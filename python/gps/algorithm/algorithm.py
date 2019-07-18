@@ -1,12 +1,9 @@
 """ This file defines the base algorithm class. """
-
 import abc
 import copy
 import logging
-
 import random
 import numpy as np
-
 from gps.algorithm.config import ALG
 from gps.algorithm.algorithm_utils import IterationData, TrajectoryInfo
 from gps.utility.general_utils import extract_condition

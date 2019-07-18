@@ -2,27 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e05e6d9-868a-4493-8112-72cb8f51a33e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/experiments/mjc_disc_cost_pilqr_example/hyperparams.py" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/mjc_disc_cost_pilqr_example/hyperparams.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiments/pr2_tensorflow_example/hyperparams.py" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/pr2_tensorflow_example/hyperparams.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/gps/agent/agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/gps/agent/agent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/gps/agent/box2d/agent_box2d.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/gps/agent/box2d/agent_box2d.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/gps/agent/box2d/arm_world.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/gps/agent/box2d/arm_world.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/gps/agent/ros/agent_ros.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/gps/agent/ros/agent_ros.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/gps/algorithm/algorithm_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/gps/algorithm/algorithm_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/gps/algorithm/dynamics/dynamics.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/gps/algorithm/dynamics/dynamics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/gps/algorithm/dynamics/dynamics_lr.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/gps/algorithm/dynamics/dynamics_lr.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/gps/algorithm/dynamics/dynamics_lr_prior.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/gps/algorithm/dynamics/dynamics_lr_prior.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/gps/algorithm/dynamics/dynamics_prior_gmm.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/gps/algorithm/dynamics/dynamics_prior_gmm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/gps/algorithm/dynamics/dynamics_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/gps/algorithm/dynamics/dynamics_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/gps/algorithm/algorithm.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/gps/algorithm/algorithm.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python/gps/gps_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/gps/gps_main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/gps/gui/action_panel.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/gps/gui/action_panel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/gps/gui/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/gps/gui/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python/gps/gui/gps_training_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/gps/gui/gps_training_gui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/gps/gui/ps3_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/gps/gui/ps3_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/gps/sample/sample.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/gps/sample/sample.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/gps/sample/sample_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/gps/sample/sample_list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/gps/utility/gmm.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/gps/utility/gmm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/tests/tests_tensorflow/test_policy_opt_tf.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/tests/tests_tensorflow/test_policy_opt_tf.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,17 +13,19 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/gps$config.coverage" NAME="config Coverage Results" MODIFIED="1558536809427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/gps/algorithm" />
-    <SUITE FILE_PATH="coverage/gps$ps3_config.coverage" NAME="ps3_config Coverage Results" MODIFIED="1563429509249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/gps/gui" />
     <SUITE FILE_PATH="coverage/gps$config__1_.coverage" NAME="config (1) Coverage Results" MODIFIED="1563429951594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/gps/gui" />
     <SUITE FILE_PATH="coverage/gps$hyperparams.coverage" NAME="hyperparams Coverage Results" MODIFIED="1563432289517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiments/pr2_tensorflow_example" />
-    <SUITE FILE_PATH="coverage/gps$algorithm_badmm.coverage" NAME="algorithm_badmm Coverage Results" MODIFIED="1558536861326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/gps/algorithm" />
     <SUITE FILE_PATH="coverage/gps$test.coverage" NAME="test Coverage Results" MODIFIED="1563429580576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/gps/proto" />
     <SUITE FILE_PATH="coverage/gps$pytest_in_test_policy_opt_tf_py.coverage" NAME="pytest in test_policy_opt_tf.py Coverage Results" MODIFIED="1558534612494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/tests/tests_tensorflow" />
+    <SUITE FILE_PATH="coverage/gps$agent.coverage" NAME="agent Coverage Results" MODIFIED="1563432481783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/gps/agent" />
+    <SUITE FILE_PATH="coverage/gps$config.coverage" NAME="config Coverage Results" MODIFIED="1558536809427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/gps/algorithm" />
+    <SUITE FILE_PATH="coverage/gps$ps3_config.coverage" NAME="ps3_config Coverage Results" MODIFIED="1563429509249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/gps/gui" />
+    <SUITE FILE_PATH="coverage/gps$algorithm_mdgps.coverage" NAME="algorithm_mdgps Coverage Results" MODIFIED="1563435998464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/gps/algorithm" />
+    <SUITE FILE_PATH="coverage/gps$algorithm_badmm.coverage" NAME="algorithm_badmm Coverage Results" MODIFIED="1558536861326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/gps/algorithm" />
     <SUITE FILE_PATH="coverage/gps$gps_training_gui.coverage" NAME="gps_training_gui Coverage Results" MODIFIED="1563430015454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/gps/gui" />
     <SUITE FILE_PATH="coverage/gps$dynamics_prior_gmm.coverage" NAME="dynamics_prior_gmm Coverage Results" MODIFIED="1563411391115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/gps/algorithm/dynamics" />
     <SUITE FILE_PATH="coverage/gps$gps_main.coverage" NAME="gps_main Coverage Results" MODIFIED="1563432544357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/gps" />
-    <SUITE FILE_PATH="coverage/gps$agent.coverage" NAME="agent Coverage Results" MODIFIED="1563432481783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/gps/agent" />
+    <SUITE FILE_PATH="coverage/gps$sample_list.coverage" NAME="sample_list Coverage Results" MODIFIED="1563435416235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/gps/sample" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1229041500">
@@ -61,24 +45,24 @@
           <entry key="gps_pb2" value="3" />
           <entry key="png" value="1" />
           <entry key="proto" value="2" />
-          <entry key="py" value="64" />
+          <entry key="py" value="71" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="1" />
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Python" value="64" />
+          <entry key="Python" value="71" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="240" />
+          <entry key="py" value="246" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="240" />
+          <entry key="Python" value="246" />
         </counts>
       </usages-collector>
     </session>
@@ -86,26 +70,14 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python/gps/sample/sample_list.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-              <folding>
-                <element signature="e#70#94#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python/gps/gps_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="74" column="17" selection-start-line="74" selection-start-column="17" selection-end-line="74" selection-end-column="17" />
+            <state relative-caret-position="2099">
+              <caret line="213" column="20" lean-forward="true" selection-start-line="213" selection-start-column="20" selection-end-line="213" selection-end-column="20" />
               <folding>
+                <element signature="e#4381#5826#0" />
                 <element signature="e#5878#7892#0" />
                 <element signature="e#5878#6071#1" />
-                <element signature="e#7952#8321#0" />
                 <element signature="e#8375#9327#0" />
                 <element signature="e#9409#10592#0" />
                 <element signature="e#10622#10896#0" />
@@ -115,9 +87,73 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/gps/gui/gps_training_gui.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4377">
+              <caret line="271" column="32" lean-forward="true" selection-start-line="271" selection-start-column="32" selection-end-line="271" selection-end-column="32" />
+              <folding>
+                <element signature="e#677#688#0" expanded="true" />
+                <element signature="e#11688#13043#0" />
+                <element signature="e#13132#14884#0" />
+                <element signature="e#15014#15903#0" />
+                <element signature="e#15991#16967#0" />
+                <element signature="e#17054#18346#0" />
+                <element signature="e#18424#18868#0" />
+                <element signature="e#18915#18942#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/gps/algorithm/algorithm_mdgps.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="355">
+              <caret line="45" column="27" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="27" />
+              <folding>
+                <element signature="e#54#65#0" expanded="true" />
+                <element signature="e#2217#3532#0" />
+                <element signature="e#3579#4638#0" />
+                <element signature="e#4692#5084#0" />
+                <element signature="e#5121#7836#0" />
+                <element signature="e#7897#9329#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/gps/sample/sample_list.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+              <folding>
+                <element signature="e#70#94#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/gps/algorithm/algorithm.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-571">
+              <caret line="7" column="55" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="55" />
+              <folding>
+                <element signature="e#6251#7032#0" />
+                <element signature="e#7103#8169#0" />
+                <element signature="e#8210#8457#0" />
+                <element signature="e#8515#8673#0" />
+                <element signature="e#8740#8872#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python/gps/agent/agent.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-798">
+            <state relative-caret-position="-741">
               <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="e#48#58#0" expanded="true" />
@@ -138,27 +174,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python/gps/agent/ros/agent_ros.py">
+        <entry file="file://$PROJECT_DIR$/python/gps/algorithm/algorithm_utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+            <state relative-caret-position="42">
+              <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
               <folding>
-                <element signature="e#750#9773#0" />
+                <element signature="e#72#90#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python/gps/agent/ros/ros_utils.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/python/gps/algorithm/dynamics/dynamics_prior_gmm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-220">
-              <caret line="39" column="7" lean-forward="true" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
+            <state relative-caret-position="307">
+              <caret line="75" column="38" selection-start-line="75" selection-start-column="38" selection-end-line="75" selection-end-column="38" />
               <folding>
-                <element signature="e#56#74#0" expanded="true" />
-                <element signature="e#2655#2869#0" />
-                <element signature="e#2914#2983#0" />
-                <element signature="e#3211#4958#0" />
+                <element signature="e#65#76#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -177,10 +210,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python/gps/sample/sample.py">
+        <entry file="file://$PROJECT_DIR$/python/gps/algorithm/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+            <state relative-caret-position="-237">
+              <caret line="58" column="1" lean-forward="true" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -202,6 +235,10 @@
       <find>imp</find>
       <find>ACTION</find>
       <find>cPickle</find>
+      <find>self._eval_cost</find>
+      <find>self.cur</find>
+      <find>self.gui</find>
+      <find>IterationData()</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -223,7 +260,6 @@
         <option value="$PROJECT_DIR$/python/gps/gui/ps3_config.py" />
         <option value="$PROJECT_DIR$/python/gps/proto/test.py" />
         <option value="$PROJECT_DIR$/python/gps/gui/config.py" />
-        <option value="$PROJECT_DIR$/python/gps/gui/gps_training_gui.py" />
         <option value="$PROJECT_DIR$/python/gps/sample/sample_list.py" />
         <option value="$PROJECT_DIR$/python/gps/agent/agent.py" />
         <option value="$PROJECT_DIR$/python/gps/agent/box2d/agent_box2d.py" />
@@ -232,6 +268,8 @@
         <option value="$PROJECT_DIR$/experiments/pr2_tensorflow_example/hyperparams.py" />
         <option value="$PROJECT_DIR$/python/gps/agent/ros/agent_ros.py" />
         <option value="$PROJECT_DIR$/python/gps/gps_main.py" />
+        <option value="$PROJECT_DIR$/python/gps/gui/gps_training_gui.py" />
+        <option value="$PROJECT_DIR$/python/gps/algorithm/algorithm.py" />
       </list>
     </option>
   </component>
@@ -284,16 +322,6 @@
             <path>
               <item name="gps" type="b2602c69:ProjectViewProjectNode" />
               <item name="gps" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gps" type="462c0819:PsiDirectoryNode" />
-              <item name="mjc_models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gps" type="462c0819:PsiDirectoryNode" />
               <item name="python" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -322,7 +350,36 @@
               <item name="gps" type="462c0819:PsiDirectoryNode" />
               <item name="python" type="462c0819:PsiDirectoryNode" />
               <item name="gps" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gps" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gps" type="462c0819:PsiDirectoryNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="gps" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="dynamics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gps" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gps" type="462c0819:PsiDirectoryNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="gps" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gps" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gps" type="462c0819:PsiDirectoryNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="gps" type="462c0819:PsiDirectoryNode" />
               <item name="proto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gps" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gps" type="462c0819:PsiDirectoryNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="gps" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -354,7 +411,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.gps_main">
+  <component name="RunManager" selected="Python.algorithm_mdgps">
     <configuration name="agent" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="gps" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -377,7 +434,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="config (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="algorithm_mdgps" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="gps" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -385,12 +442,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/gps/gui" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/gps/algorithm" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/gps/gui/config.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/gps/algorithm/algorithm_mdgps.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -421,28 +478,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="gps_training_gui" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="gps" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/gps/gui" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/gps/gui/gps_training_gui.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="hyperparams" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="gps" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -465,20 +500,42 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="sample_list" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="gps" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/gps/sample" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/gps/sample/sample_list.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.gps_main" />
-      <item itemvalue="Python.config (1)" />
-      <item itemvalue="Python.gps_training_gui" />
       <item itemvalue="Python.hyperparams" />
       <item itemvalue="Python.agent" />
+      <item itemvalue="Python.sample_list" />
+      <item itemvalue="Python.algorithm_mdgps" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.algorithm_mdgps" />
+        <item itemvalue="Python.sample_list" />
         <item itemvalue="Python.gps_main" />
         <item itemvalue="Python.agent" />
         <item itemvalue="Python.hyperparams" />
-        <item itemvalue="Python.gps_training_gui" />
-        <item itemvalue="Python.config (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -505,14 +562,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21387696" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22174536" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.14337349" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.0746988" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -563,11 +619,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/python/gps/algorithm/algorithm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-79" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/python/tests/tests_gui/gui_demos.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -593,13 +644,6 @@
     <entry file="file://$PROJECT_DIR$/python/gps/algorithm/algorithm_mdgps_pilqr.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-669" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/gps/algorithm/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-984">
-          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/python/tests/tests_tensorflow/test_policy_opt_tf.py">
@@ -667,35 +711,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/gps/algorithm/algorithm_mdgps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/python/gps/algorithm/dynamics/dynamics.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
           <folding>
             <element signature="e#66#76#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/gps/algorithm/dynamics/dynamics_prior_gmm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="31" lean-forward="true" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-          <folding>
-            <element signature="e#65#76#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/gps/algorithm/algorithm_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="101" column="41" lean-forward="true" selection-start-line="101" selection-start-column="41" selection-end-line="101" selection-end-column="41" />
-          <folding>
-            <element signature="e#72#90#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -734,26 +755,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/gps/gui/gps_training_gui.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
-          <folding>
-            <element signature="e#677#688#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/gps/sample/sample_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-          <folding>
-            <element signature="e#70#94#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/imgs/box2d0.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -774,27 +775,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/gps/sample/sample.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/experiments/box2d_arm_example/hyperparams.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3">
           <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/experiments/pr2_tensorflow_example/hyperparams.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2414">
-          <caret line="142" column="23" selection-start-line="142" selection-start-column="23" selection-end-line="142" selection-end-column="23" />
-          <folding>
-            <element signature="e#64#95#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -815,16 +799,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/gps/agent/ros/agent_ros.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding>
-            <element signature="e#750#9773#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/python/gps/agent/ros/ros_utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-220">
@@ -838,9 +812,104 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/python/gps/gps_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2099">
+          <caret line="213" column="20" lean-forward="true" selection-start-line="213" selection-start-column="20" selection-end-line="213" selection-end-column="20" />
+          <folding>
+            <element signature="e#4381#5826#0" />
+            <element signature="e#5878#7892#0" />
+            <element signature="e#5878#6071#1" />
+            <element signature="e#8375#9327#0" />
+            <element signature="e#9409#10592#0" />
+            <element signature="e#10622#10896#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/gps/sample/sample.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-752">
+          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+          <folding>
+            <element signature="e#2455#3045#0" />
+            <element signature="e#3079#3479#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/pr2_tensorflow_example/hyperparams.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2414">
+          <caret line="142" column="23" selection-start-line="142" selection-start-column="23" selection-end-line="142" selection-end-column="23" />
+          <folding>
+            <element signature="e#64#95#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/gps/algorithm/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-237">
+          <caret line="58" column="1" lean-forward="true" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/gps/gui/gps_training_gui.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4377">
+          <caret line="271" column="32" lean-forward="true" selection-start-line="271" selection-start-column="32" selection-end-line="271" selection-end-column="32" />
+          <folding>
+            <element signature="e#677#688#0" expanded="true" />
+            <element signature="e#11688#13043#0" />
+            <element signature="e#13132#14884#0" />
+            <element signature="e#15014#15903#0" />
+            <element signature="e#15991#16967#0" />
+            <element signature="e#17054#18346#0" />
+            <element signature="e#18424#18868#0" />
+            <element signature="e#18915#18942#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/gps/algorithm/algorithm_mdgps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="45" column="27" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="27" />
+          <folding>
+            <element signature="e#54#65#0" expanded="true" />
+            <element signature="e#2217#3532#0" />
+            <element signature="e#3579#4638#0" />
+            <element signature="e#4692#5084#0" />
+            <element signature="e#5121#7836#0" />
+            <element signature="e#7897#9329#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/gps/algorithm/algorithm_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+          <folding>
+            <element signature="e#72#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/gps/agent/ros/agent_ros.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding>
+            <element signature="e#750#9773#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/python/gps/agent/agent.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-798">
+        <state relative-caret-position="-741">
           <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="e#48#58#0" expanded="true" />
@@ -859,17 +928,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/gps/gps_main.py">
+    <entry file="file://$PROJECT_DIR$/python/gps/algorithm/algorithm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="74" column="17" selection-start-line="74" selection-start-column="17" selection-end-line="74" selection-end-column="17" />
+        <state relative-caret-position="-571">
+          <caret line="7" column="55" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="55" />
           <folding>
-            <element signature="e#5878#7892#0" />
-            <element signature="e#5878#6071#1" />
-            <element signature="e#7952#8321#0" />
-            <element signature="e#8375#9327#0" />
-            <element signature="e#9409#10592#0" />
-            <element signature="e#10622#10896#0" />
+            <element signature="e#6251#7032#0" />
+            <element signature="e#7103#8169#0" />
+            <element signature="e#8210#8457#0" />
+            <element signature="e#8515#8673#0" />
+            <element signature="e#8740#8872#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/gps/sample/sample_list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+          <folding>
+            <element signature="e#70#94#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/gps/algorithm/dynamics/dynamics_prior_gmm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="75" column="38" selection-start-line="75" selection-start-column="38" selection-end-line="75" selection-end-column="38" />
+          <folding>
+            <element signature="e#65#76#0" expanded="true" />
           </folding>
         </state>
       </provider>
