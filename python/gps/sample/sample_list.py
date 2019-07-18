@@ -1,11 +1,11 @@
 """ This file defines the sample list wrapper and sample writers. """
-import cPickle
+import pickle as cPickle
 import logging
 
 import numpy as np
 
-from gps.proto.gps_pb2 import NOISE
-
+# from gps.proto.gps_pb2 import NOISE
+NOISE = 19
 
 LOGGER = logging.getLogger(__name__)
 

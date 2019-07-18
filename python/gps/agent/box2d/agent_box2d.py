@@ -4,7 +4,8 @@ import numpy as np
 from gps.agent.agent import Agent
 from gps.agent.agent_utils import generate_noise, setup
 from gps.agent.config import AGENT_BOX2D
-from gps.proto.gps_pb2 import ACTION
+# from gps.proto.gps_pb2 import ACTION
+ACTION = 0
 from gps.sample.sample import Sample
 
 

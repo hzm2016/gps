@@ -1,10 +1,7 @@
 """ This file defines the main object that runs experiments. """
-
 import matplotlib as mpl
 mpl.use('Qt4Agg')
-
 import logging
-import imp
 import os
 import os.path
 import sys
@@ -13,8 +10,10 @@ import argparse
 import threading
 import time
 import traceback
+import imp
 
 # Add gps/python to path so that imports work.
+print('/'.join(str.split(__file__, '/')[:-2]))
 sys.path.append('/'.join(str.split(__file__, '/')[:-2]))
 from gps.gui.gps_training_gui import GPSTrainingGUI
 from gps.utility.data_logger import DataLogger
@@ -23,6 +22,7 @@ from gps.sample.sample_list import SampleList
 
 class GPSMain(object):
     """ Main class to run algorithms and experiments. """
+
     def __init__(self, config, quit_on_end=False):
         """
         Initialize GPSMain
@@ -30,16 +30,18 @@ class GPSMain(object):
             config: Hyperparameters for experiment
             quit_on_end: When true, quit automatically on completion
         """
+
         self._quit_on_end = quit_on_end
         self._hyperparams = config
         self._conditions = config['common']['conditions']
+
         if 'train_conditions' in config['common']:
             self._train_idx = config['common']['train_conditions']
             self._test_idx = config['common']['test_conditions']
         else:
             self._train_idx = range(self._conditions)
             config['common']['train_conditions'] = config['common']['conditions']
-            self._hyperparams=config
+            self._hyperparams = config
             self._test_idx = self._train_idx
 
         self._data_files_dir = config['common']['data_files_dir']
@@ -71,7 +73,6 @@ class GPSMain(object):
                     self.agent.get_samples(cond, -self._hyperparams['num_samples'])
                     for cond in self._train_idx
                 ]
-
                 # Clear agent samples.
                 self.agent.clear_samples()
 
@@ -278,11 +279,13 @@ class GPSMain(object):
                 # Quit automatically (for running sequential expts)
                 os._exit(1)
 
+
 def main():
+
     """ Main function to be run. """
     parser = argparse.ArgumentParser(description='Run the Guided Policy Search algorithm.')
-    parser.add_argument('experiment', type=str,
-                        help='experiment name')
+    parser.add_argument('--experiment', type=str,
+                        help='experiment', default='box2d_arm_example')
     parser.add_argument('-n', '--new', action='store_true',
                         help='create new experiment')
     parser.add_argument('-t', '--targetsetup', action='store_true',
@@ -295,6 +298,7 @@ def main():
                         help='silent debug print outs')
     parser.add_argument('-q', '--quit', action='store_true',
                         help='quit GUI automatically when finished')
+
     args = parser.parse_args()
 
     exp_name = args.experiment
@@ -302,9 +306,13 @@ def main():
     test_policy_N = args.policy
 
     from gps import __file__ as gps_filepath
+
     gps_filepath = os.path.abspath(gps_filepath)
     gps_dir = '/'.join(str.split(gps_filepath, '/')[:-3]) + '/'
     exp_dir = gps_dir + 'experiments/' + exp_name + '/'
+    print('gps_dir', gps_dir)
+    print('exp_dir', exp_dir)
+
     hyperparams_file = exp_dir + 'hyperparams.py'
 
     if args.silent:
@@ -346,6 +354,7 @@ def main():
                  (exp_name, hyperparams_file))
 
     hyperparams = imp.load_source('hyperparams', hyperparams_file)
+
     if args.targetsetup:
         try:
             import matplotlib.pyplot as plt
@@ -355,8 +364,8 @@ def main():
             agent = AgentROS(hyperparams.config['agent'])
             TargetSetupGUI(hyperparams.config['common'], agent)
 
-            plt.ioff()
-            plt.show()
+            # plt.ioff()
+            # plt.show()
         except ImportError:
             sys.exit('ROS required for target setup.')
     elif test_policy_N:
@@ -376,6 +385,7 @@ def main():
         current_itr = int(current_algorithm[len(algorithm_prefix):len(algorithm_prefix)+2])
 
         gps = GPSMain(hyperparams.config)
+
         if hyperparams.config['gui_on']:
             test_policy = threading.Thread(
                 target=lambda: gps.test_policy(itr=current_itr, N=test_policy_N)
@@ -383,8 +393,8 @@ def main():
             test_policy.daemon = True
             test_policy.start()
 
-            plt.ioff()
-            plt.show()
+            # plt.ioff()
+            # plt.show()
         else:
             gps.test_policy(itr=current_itr, N=test_policy_N)
     else:
@@ -404,8 +414,8 @@ def main():
             run_gps.daemon = True
             run_gps.start()
 
-            plt.ioff()
-            plt.show()
+            # plt.ioff()
+            # plt.show()
         else:
             gps.run(itr_load=resume_training_itr)
 

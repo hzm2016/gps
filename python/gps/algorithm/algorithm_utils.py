@@ -98,17 +98,22 @@ def gauss_fit_joint_prior(pts, mu0, Phi, m, n0, dwts, dX, dU, sig_reg):
     diff = pts - mun
     empsig = diff.T.dot(D).dot(diff)
     empsig = 0.5 * (empsig + empsig.T)
+
     # MAP estimate of joint distribution.
     N = dwts.shape[0]
     mu = mun
     sigma = (N * empsig + Phi + (N * m) / (N + m) *
              np.outer(mun - mu0, mun - mu0)) / (N + n0)
     sigma = 0.5 * (sigma + sigma.T)
+
     # Add sigma regularization.
     sigma += sig_reg
+
     # Conditioning to get dynamics.
     fd = np.linalg.solve(sigma[:dX, :dX], sigma[:dX, dX:dX+dU]).T
     fc = mu[dX:dX+dU] - fd.dot(mu[:dX])
+
     dynsig = sigma[dX:dX+dU, dX:dX+dU] - fd.dot(sigma[:dX, :dX]).dot(fd.T)
     dynsig = 0.5 * (dynsig + dynsig.T)
+
     return fd, fc, dynsig

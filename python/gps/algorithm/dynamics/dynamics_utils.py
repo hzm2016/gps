@@ -31,4 +31,5 @@ def guess_dynamics(gains, acc, dX, dU, dt):
         np.zeros((dX - dU*2, dX+dU))
     ])
     fc = np.hstack([acc * dt ** 2, acc * dt, np.zeros((dX - dU*2))])
+
     return Fd, fc

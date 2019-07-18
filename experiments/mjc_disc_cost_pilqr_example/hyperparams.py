@@ -91,7 +91,7 @@ state_cost = {
 
 binary_region_cost = {
     'type': CostBinaryRegion,
-    'data_types' : {
+    'data_types': {
         END_EFFECTOR_POINTS: {
             'wp': np.ones(SENSOR_DIMS[END_EFFECTOR_POINTS]),
             'target_state': np.array([2.5, 0.5, 0]),

@@ -5,6 +5,7 @@ from framework import Framework
 from gps.agent.box2d.settings import fwSettings
 from gps.proto.gps_pb2 import JOINT_ANGLES, JOINT_VELOCITIES, END_EFFECTOR_POINTS
 
+
 class ArmWorld(Framework):
     """ This class defines the 2 Link Arm and its environment."""
     name = "2 Link Arm"
