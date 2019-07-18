@@ -13,11 +13,12 @@ Plotter 3D
 import time
 import random
 import threading
-
+import sys
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 
+sys.path.append('/'.join(str.split(__file__, '/')[:-2]))
 from gps.gui.action_panel import Action, ActionPanel
 from gps.gui.textbox import Textbox
 from gps.gui.image_visualizer import ImageVisualizer

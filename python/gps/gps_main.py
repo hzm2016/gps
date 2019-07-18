@@ -1,6 +1,11 @@
 """ This file defines the main object that runs experiments. """
 import matplotlib as mpl
+<<<<<<< HEAD
 mpl.use('Qt4Agg')
+=======
+# mpl.use('Qt4Agg')
+
+>>>>>>> 36f0b167c0f144c34e2a2a80ac7df1f87f1d52eb
 import logging
 import os
 import os.path
@@ -15,12 +20,13 @@ import imp
 # Add gps/python to path so that imports work.
 print('/'.join(str.split(__file__, '/')[:-2]))
 sys.path.append('/'.join(str.split(__file__, '/')[:-2]))
-from gps.gui.gps_training_gui import GPSTrainingGUI
-from gps.utility.data_logger import DataLogger
+# from gps.gui.gps_training_gui import GPSTrainingGUI
+# from gps.utility.data_logger import DataLogger
 from gps.sample.sample_list import SampleList
 
 
 class GPSMain(object):
+
     """ Main class to run algorithms and experiments. """
 
     def __init__(self, config, quit_on_end=False):
