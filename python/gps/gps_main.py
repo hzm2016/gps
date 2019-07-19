@@ -284,7 +284,7 @@ class GPSMain(object):
 def main():
     """ Main function to be run. """
     parser = argparse.ArgumentParser(description='Run the Guided Policy Search algorithm.')
-    parser.add_argument('experiment', type=str,
+    parser.add_argument('--experiment', type=str, default='pr2_tensorflow_example',
                         help='experiment name')
     parser.add_argument('-n', '--new', action='store_true',
                         help='create new experiment')

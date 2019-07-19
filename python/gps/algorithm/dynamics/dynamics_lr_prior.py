@@ -42,6 +42,7 @@ class DynamicsLRPrior(Dynamics):
         ip = slice(dX+dU, dX+dU+dX)
         # Fit dynamics with least squares regression.
         dwts = (1.0 / N) * np.ones(N)
+
         for t in range(T - 1):
             Ys = np.c_[X[:, t, :], U[:, t, :], X[:, t+1, :]]
             # Obtain Normal-inverse-Wishart prior.

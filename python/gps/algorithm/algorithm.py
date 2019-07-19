@@ -202,6 +202,7 @@ class Algorithm(object):
         # Optimize I w.r.t. KL: 0 = predicted_dI + 2 * penalty * KL =>
         # KL' = (-predicted_dI)/(2*penalty) = (pred/2*(pred-act)) * KL.
         # Therefore, the new multiplier is given by pred/2*(pred-act).
+
         new_mult = predicted_impr / (2.0 * max(1e-4,
                                                predicted_impr - actual_impr))
         new_mult = max(0.1, min(5.0, new_mult))

@@ -4,8 +4,11 @@ import logging
 
 import numpy as np
 import scipy as sp
+import sys
 
-from gps.algorithm.algorithm import Algorithm
+sys.path.append('/'.join(str.split(__file__, '/')[:-2]))
+
+from gps.algorithm import Algorithm
 from gps.algorithm.algorithm_utils import PolicyInfo
 from gps.algorithm.config import ALG_BADMM
 from gps.sample.sample_list import SampleList

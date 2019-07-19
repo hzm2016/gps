@@ -7,7 +7,7 @@ import os.path
 import numpy as np
 
 from gps import __file__ as gps_filepath
-from gps.agent.ros.agent_ros import AgentROS
+# from gps.agent.ros.agent_ros import AgentROS
 from gps.algorithm.algorithm_badmm import AlgorithmBADMM
 from gps.algorithm.cost.cost_fk import CostFK
 from gps.algorithm.cost.cost_action import CostAction
@@ -118,6 +118,7 @@ agent = {
                     END_EFFECTOR_POINT_VELOCITIES],
 }
 
+
 algorithm = {
     'type': AlgorithmBADMM,
     'conditions': common['conditions'],
@@ -139,6 +140,7 @@ algorithm = {
     'max_policy_samples': 6,
     'policy_sample_mode': 'add',
 }
+
 
 algorithm['init_traj_distr'] = {
     'type': init_lqr,
