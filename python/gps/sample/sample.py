@@ -1,7 +1,8 @@
 """ This file defines the sample class. """
 import numpy as np
 
-from gps.proto.gps_pb2 import ACTION
+# from gps.proto.gps_pb2 import ACTION
+ACTION = 0
 
 
 class Sample(object):

@@ -12,11 +12,10 @@ sys.path.append(gps_path)
 from gps.algorithm.policy.tf_policy import TfPolicy
 from gps.algorithm.policy_opt.policy_opt_tf import PolicyOptTf
 from gps.algorithm.policy_opt.config import POLICY_OPT_TF
-from gps.algorithm.policy_opt.tf_model_example import euclidean_loss_layer, \
-    batched_matrix_vector_multiply
-from gps.proto.gps_pb2 import JOINT_ANGLES, JOINT_VELOCITIES, \
-        END_EFFECTOR_POINTS, END_EFFECTOR_POINT_VELOCITIES, ACTION
+from gps.algorithm.policy_opt.tf_model_example import euclidean_loss_layer, batched_matrix_vector_multiply
+from gps.proto.gps_pb2 import JOINT_ANGLES, JOINT_VELOCITIES, END_EFFECTOR_POINTS, END_EFFECTOR_POINT_VELOCITIES, ACTION
 from gps.algorithm.policy_opt.tf_model_example import example_tf_network
+
 
 SENSOR_DIMS = {
     JOINT_ANGLES: 7,
@@ -236,7 +235,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-
-

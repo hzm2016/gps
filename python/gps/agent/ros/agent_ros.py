@@ -19,7 +19,6 @@ except ImportError:  # user does not have tf installed.
     TfPolicy = None
 
 
-
 class AgentROS(Agent):
     """
     All communication between the algorithms and ROS is done through

@@ -6,6 +6,7 @@ from gps.algorithm.algorithm_utils import gauss_fit_joint_prior
 
 
 class DynamicsLRPrior(Dynamics):
+
     """ Dynamics with linear regression, with arbitrary prior. """
     def __init__(self, hyperparams):
         Dynamics.__init__(self, hyperparams)
@@ -28,6 +29,7 @@ class DynamicsLRPrior(Dynamics):
     #TODO: Merge this with DynamicsLR.fit - lots of duplicated code.
     def fit(self, X, U):
         """ Fit dynamics. """
+
         N, T, dX = X.shape
         dU = U.shape[2]
 
@@ -40,18 +42,23 @@ class DynamicsLRPrior(Dynamics):
 
         it = slice(dX+dU)
         ip = slice(dX+dU, dX+dU+dX)
+
         # Fit dynamics with least squares regression.
+
         dwts = (1.0 / N) * np.ones(N)
 
         for t in range(T - 1):
             Ys = np.c_[X[:, t, :], U[:, t, :], X[:, t+1, :]]
+
             # Obtain Normal-inverse-Wishart prior.
+
             mu0, Phi, mm, n0 = self.prior.eval(dX, dU, Ys)
             sig_reg = np.zeros((dX+dU+dX, dX+dU+dX))
             sig_reg[it, it] = self._hyperparams['regularization']
-            Fm, fv, dyn_covar = gauss_fit_joint_prior(Ys,
-                        mu0, Phi, mm, n0, dwts, dX+dU, dX, sig_reg)
+            Fm, fv, dyn_covar = gauss_fit_joint_prior(Ys, mu0, Phi, mm, n0, dwts, dX+dU, dX, sig_reg)
+
             self.Fm[t, :, :] = Fm
             self.fv[t, :] = fv
             self.dyn_covar[t, :, :] = dyn_covar
+
         return self.Fm, self.fv, self.dyn_covar

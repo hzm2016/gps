@@ -5,6 +5,7 @@ from gps.algorithm.dynamics.dynamics import Dynamics
 
 
 class DynamicsLR(Dynamics):
+
     """ Dynamics with linear regression, with constant prior. """
     def __init__(self, hyperparams):
         Dynamics.__init__(self, hyperparams)
@@ -51,4 +52,5 @@ class DynamicsLR(Dynamics):
 
             dyn_covar = sigma[ip, ip] - Fm.dot(sigma[it, it]).dot(Fm.T)
             self.dyn_covar[t, :, :] = 0.5 * (dyn_covar + dyn_covar.T)
+
         return self.Fm, self.fv, self.dyn_covar

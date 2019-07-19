@@ -1,9 +1,7 @@
 """ This file defines a Gaussian mixture model class. """
 import logging
-
 import numpy as np
 import scipy.linalg
-
 
 LOGGER = logging.getLogger(__name__)
 

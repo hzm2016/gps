@@ -3,7 +3,8 @@ import abc
 import copy
 
 from gps.agent.config import AGENT
-from gps.proto.gps_pb2 import ACTION
+# from gps.proto.gps_pb2 import ACTION
+ACTION = 0
 from gps.sample.sample_list import SampleList
 
 
